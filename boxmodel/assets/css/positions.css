@@ -1,15 +1,51 @@
-.a{
+.fixed{
+    top: 0;
+    left: 0;
     height: 200px;
     width: 200px;
     border: 2px solid pink;
+    background-color: pink;
+    position: relative;
 }
-.b{
+.relative{
     height: 200px;
     width: 200px;
-    border: 2px solid rgb(209, 9, 142);
+    border: 2px solid rgb(224, 163, 204);
+    background-color: rgb(224, 163, 204);
+    position: relative;
 }
-.c{
+.sticky{
     height: 200px;
     width: 200px;
     border: 2px solid rgb(194, 39, 65);
+   background-color: rgb(194, 39, 65); 
+   position: sticky;
+}
+.relative{
+    height: 200px;
+    width: 200px;
+    border: 2px solid palevioletred;
+    background-color: palevioletred;
+    position: relative;
+}
+.absolute{
+    height: 200px;
+    width: 200px;
+    border: 2px solid dark rgb(185, 11, 69); 
+    background-color: rgb(185, 11, 69);
+    position: relative; 
+}
+.sticky{
+    height: 200px;
+    width: 200px;
+    border: 2px solid dark rgb(247, 60, 122); 
+    background-color: rgb(247, 60, 122); 
+    position: sticky;
+}
+.relative{
+    height: 200px;
+    width: 200px;
+    border: 2px solid dark rgb(143, 1, 48); 
+    background-color: rgb(143, 1, 48);
+    position: relative; 
 }
