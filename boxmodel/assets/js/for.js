@@ -44,6 +44,3 @@ for (let initial=y; initial<=z; initial++){
 }
 }
 a.innerHTML=b
-if(z % 2 === 0){
-
-}
