@@ -28,22 +28,20 @@ b += `
   </tr>`
 
 for (let i =0; i <x.length ; i++ ){
-    if (i % 2===0){
-    b+=` <tr style = "background-color: rgb(224, 163, 204)">
-    <td>${x[i][0]}</td>
-    <td>${x[i][1]}</td>
-    <td>${x[i][2]}</td>
-    <td>${x[i][3]}</td>
-    <td>${x[i][4]}</td>
+  if (i % 2===0){
+  b+=` <tr style = "background-color: rgb(224, 163, 204)">
+  for (let j=0; j<x[i].length ; j++ ){
+
+    
+}
+    <td>${x[i][j]}</td>
 </tr>`
 }else{
-    b+=` <tr style = "background-color: rgb(215, 246, 255)">
-    <td>${x[i][0]}</td>
-    <td>${x[i][1]}</td>
-    <td>${x[i][2]}</td>
-    <td>${x[i][3]}</td>
-    <td>${x[i][4]}</td>
+    b+=` <tr style = "background-color: rgb(121, 186, 204)">
+    for (let j =0; j<x[i].length; j++)
+    `<td>${x[i][j]}</td>`
 </tr>`
 }
 }
+
 a.innerHTML = b
