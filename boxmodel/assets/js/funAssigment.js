@@ -5,10 +5,13 @@ function a(){
   
   for (let i = uinput; i <= x; i++) {
     if (i % 5 === 0) {
+      bgcolor = "lightgreen";
       data.innerHTML += i + " fizz buzz" + "<br>";
     } else if (i % 2 === 0) {
+      bgcolor = "lightblue"
       data.innerHTML += i + " buzz" + "<br>";
     } else {
+      bgcolor = "pink"
       data.innerHTML += i + " fizz" + "<br>";
     }
   }
