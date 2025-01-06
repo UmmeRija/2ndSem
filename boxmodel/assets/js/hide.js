@@ -1,11 +1,11 @@
-const nameInput = document.getElementById('name');
-const optionSelect = document.getElementById('option');
-const submitButton = document.getElementById('submit');
-const resultDiv = document.getElementById('result');
+let nameInput = document.getElementById('name');
+let optionSelect = document.getElementById('option');
+let submitButton = document.getElementById('submit');
+let resultDiv = document.getElementById('result');
 
 submitButton.addEventListener('click', () => {
-  const name = nameInput.value;
-  const option = optionSelect.value;
+ let name = nameInput.value;
+ let option = optionSelect.value;
 
   if (option === 'hide') {
     resultDiv.innerHTML = `<button id="show-button">Show</button>`;
