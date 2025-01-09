@@ -1,54 +1,33 @@
-{
-    "messenger bags":[
-        {
-            "name":"Women's Lattice Embroidery Crossbody Bag Small Messenger Bag Fashion Fashion Shoulder Bags Phone Bag Camera Bag",
-            "price":"Rs.1,269",
-            "discount":"<del>2,120</del> 40%",
-            "image":"images/bag1.jpg",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        },
-        {
-            "name":"fashion inn",
-            "price":"50k",
-            "discount":"3 to 5",
-            "image":"images/bag2.jpg",
-             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        },
-        {
-            "name":"course house",
-            "price":"50k",
-            "discount":"<del>2,120</del> 40%",
-            "image":"images/bag3.jpg",
-             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        }
-    ],
-    "web Development":[
-        {
-            "name":"ecommerce",
-            "price":"150k",
-            "technology":"html css javacsript php",
-            "pages":"3 to 5",
-            "hosting":"10% charge extra",
-            "image":"images/bag1.jpg",
-            "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        },
-        {
-            "name":"fashion inn",
-            "price":"50k",
-            "technology":"react laravel 11",
-            "pages":"3 to 5",
-            "hosting":"10% charge extra",
-            "image":"images/bag1.jpg",
-             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        },
-        {
-            "name":"daraz",
-            "price":"50k",
-            "technology":"react php",
-            "pages":"3 to 5",
-            "hosting":"10% charge extra",
-            "image":"images/bag1.jpg",
-             "description":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,"
-        }
-    ]
-}
+[
+    {
+        "name":"Messenger Bags",
+        "price":"50k",
+        "pages":"3 to 5",
+        "hosting":"10% charge extra",
+        "image":"images/bag1.jpg"
+    },
+    {
+        "name":"web development",
+        "price":"150k",
+        "pages":"crm",
+        "hosting":"20% charge extra",
+        "image":"images/bag2.jpg"
+        
+    },
+    {
+        "name":"digital marketing",
+        "price":"150k",
+        "pages":"crm",
+        "hosting":"20% charge extra",
+        "image":"images/bag3.jpg"
+        
+    },
+    {
+        "name":"Mobile Application development",
+        "price":"150k",
+        "pages":"crm",
+        "hosting":"20% charge extra",
+        "image":"images/bag4.jpg"
+        
+    }
+]
