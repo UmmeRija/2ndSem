@@ -7,7 +7,7 @@ $(document).ready(function(){
     // console.log(card1.hosting)
     i=""
     $.each(card1,function(index,object){
-      let catObj = object.name.split(" ").join("").toLowerCase();
+      // let catObj = object.name.split(" ").join("").toLowerCase();
       // console.log(catObj)
       i+=` <div class="col-lg-3 md-6 mt-2"></div>
         <div class="card">
