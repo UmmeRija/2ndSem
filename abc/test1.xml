@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <school>
-<classes> 
-<student>
-<std1 id="1">Rija</std1>
-<email>rija@gmail.com</email>
-<age>20</age>
-<batch>AI-202408E1</batch>
-</student>
-</classes>
+ <classes> 
+  <student>
+   <std1 id="1">Rija</std1>
+   <email>rija@gmail.com</email>
+   <age>20</age>
+   <batch>AI-202408E1</batch>
+  </student>
+ </classes>
 </school>
