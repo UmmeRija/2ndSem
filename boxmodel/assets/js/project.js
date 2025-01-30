@@ -1,15 +1,16 @@
-
+let row=document.getElementById('catgeory')
 $(document).ready(function(){
   $.ajax({
     url:"assets/json/project.json",
     type: "get",
     success:function(card1){
     // console.log(card1.hosting)
-    i=""
+    // i=""
     $.each(card1,function(index,object){
-      // let catObj = object.name.split(" ").join("").toLowerCase();
-      // console.log(catObj)
-      i+=` <div class="col-lg-3 md-6 mt-2"></div>
+      let catObj = object.name.split(" ").join("").toLowerCase();
+      console.log(catObj)
+console.log(object)
+row.innerHTML+=` <div class="col-lg-3 md-6 mt-2"></div>
         <div class="card">
           <img src="${object.image}" class="card-img-top" alt="...">
           <div class="card-body">
