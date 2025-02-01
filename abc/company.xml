@@ -1,0 +1,36 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE company[
+<!ELEMENT  company (department)>
+<!ELEMENT department (name, location , employes )>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT employes (emp_name , age , contact )>
+<!ELEMENT emp_name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT contact (email, mob_no)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT mob_no (#PCDATA)>
+
+
+
+<!ATTLIST department id CDATA #IMPLIED>
+<!ATTLIST employes emp_id CDATA #IMPLIED>
+
+]>
+
+
+<company>
+  <department id = "101">
+    <name>civil</name>
+    <location>Karachi</location>
+    <employes emp_id = "201">
+      <emp_name>Rija</emp_name>
+      <age>20</age>
+      <contact>
+        <email>rija@gmail.com</email>
+        <mob_no>0331 12345</mob_no>
+      </contact>
+
+    </employes>
+  </department>
+</company>
