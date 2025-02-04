@@ -1,0 +1,11 @@
+
+<!ELEMENT students (student+)>
+<!ELEMENT student (id, name, department, batch)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT department (#PCDATA)>
+<!ELEMENT batch (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+
+<!ATTLIST student id CDATA #IMPLIED>
+

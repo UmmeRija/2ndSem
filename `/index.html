@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body {
+            background-color: khaki;
+        }
+        
+        .container {
+            margin: 20px 260px;
+            background-color: rgb(133, 133, 62);
+            width: 700px;
+            height: 550px;
+        }
+        
+        .ptop {
+            height: 60px;
+            width: 100%;
+            background-color: rgb(62, 82, 61);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .box {
+            height: 30px;
+            width: 30px;
+            background-color: azure;
+            border: 2px solid black;
+            margin-top: 10px;
+            text-align: center;
+            color: rgb(133, 133, 62);
+        }
+        
+        #bpn1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .bubble{
+            background-color: aqua;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            text-align: center;
+            margin: 10px 10px;
+            color: seagreen;
+            font-size: 40px;
+        }
+        
+  
+    </style>
+
+    <div class="container">
+        <div class="ptop">
+            <div class="box" id="hit"></div>
+            <div class="box" id="time"></div>
+            <div class="box" id="score"></div>
+        </div>
+        <div id="bpn1"></div>
+    </div>
+
+    <script>
+        let bubble = "";
+        let hitt = 0;
+        document.getElementById('hit').innerHTML = hitt;
+        let sec = 60;
+        document.getElementById('time').innerHTML = sec;
+        let scoree = 10;
+        document.getElementById('score').innerHTML = scoree;
+
+       function start() {
+        for(let i =0; i < 35; i++) {
+            bubble += '<div class="bubble">5</div>';
+        }
+        document.getElementById('bpn1').innerHTML =bubble;
+       }
+       start();
+
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version = "1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "test.dtd">
+
+
+<students>
+  <student id = "1221">
+    <id>1011</id>
+    <name>rija</name>
+    <department>computerscience</department>
+    <batch>AI-202408E1</batch>
+  </student>
+
+  <student id = "1222">
+    <id>1012</id>
+    <name>Yumna</name>
+    <department>computer science</department>
+    <batch>AI-202408E1</batch>
+  </student>
+</students>
