@@ -22,10 +22,10 @@ else if(percentage >= 60 && percentage <= 69){
 else if(percentage >= 50 && percentage <= 59){
     Grade = "C-Grade"
 }
-if(percentage >= 40 && percentage <= 49){
+else if(percentage >= 40 && percentage <= 49){
     Grade = "D-Grade"
 }
-// else{
-//     Grade = "fails";
-// }
+else{
+    Grade = "Invalid";
+}
 document.write("<h2>According to your percentage, your grade is: " + Grade + "</h2>");
