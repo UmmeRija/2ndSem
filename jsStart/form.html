@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Basic Reset */
+    body, h1, p, label, input, button {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        /* display: flex; */
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* Main form container */
+    .formBox {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* Label Styling */
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: #555;
+        font-size: 16px;
+    }
+
+    /* Input Styling */
+    input[type="text"], input[type="tel"], input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
+    /* Input Focus Styling */
+    input[type="text"]:focus, input[type="tel"]:focus, input[type="password"]:focus {
+        border-color: #007BFF;
+        outline: none;
+    }
+
+    /* Submit Button Styling */
+    .submit-btin {
+        width: 20%;
+        padding: 12px;
+        background-color: #007BFF;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .submit-btin:hover {
+        background-color: #0056b3;
+    }
+
+    /* Small Screen Adjustments */
+    @media (max-width: 480px) {
+        .formBox {
+            padding: 20px;
+        }
+
+        .submit-btin {
+            font-size: 14px;
+        }
+    }
+</style>
+<body>
+    <form action="index.html" id="sampleForm" onsubmit="return data()"></form>
+    <div class="formBox">
+    <label for="name">User Name </label>
+    <input type="text" id="name">
+    </div>
+    <div class="formBox">
+        <label for="name">Contact </label>
+        <input type="tel" id="Contact">
+        </div>
+        <div class="formBox">
+            <label for="pasword">pasword</label>
+            <input type="password" id="pasword">
+            </div>
+            <div class="formBox">
+                <label for="password">Confirm pasword </label>
+                <input type="password" id="cpasword">
+                </div>
+                <button class="submit-btin">subbmit</button>
+
+                <script>
+function data() {
+            const password = document.getElementById('pasword').value;
+            const confirmPassword = document.getElementById('cpasword').value;
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match!");
+                return false;  // Prevent form submission
+            }
+            return true;
+        }
+                </script>
+</body>
+</html>
