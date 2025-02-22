@@ -34,7 +34,23 @@
 
 
     <script>
-        
+        document.getElementById("loginform").onsubmit = function(event){
+            event.preventDefault();
+            let email = "abc@gamil.com"
+            let pass = "12345"
+
+            let uemail = document.getElementById("email").value;
+            let password = document.getElementById("password").value;
+
+            if (email===uemail && pass===password){
+                window.location.href = "index.html";
+            }
+            else{
+                alert("Incorrect Email and password");
+            }
+
+           
+        }
     </script>
 </body>
 </html>
