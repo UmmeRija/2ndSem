@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(221, 77, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+center {
+    background: palevioletred;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.input-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: black;
+}
+
+input {
+    width: 100px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: #007BFF;
+}
+
+</style>
+<body>
+    <center>
+        <h1>Unit Converter</h1>
+        <div class="input-div">
+            <label for="cm">Centimeters</label>
+            <input type="number" value="100" id="cm" class="input">
+        </div>
+        <div class="input-div">
+            <h1>=</h1>
+        </div>    
+        <div class="input-div">
+            <label for="m">Meters</label>
+            <input type="number" value="1" id="m" class="input">
+        </div>
+    </center>
+    
+    <script>
+        let cm = document.getElementById("cm");
+        let m = document.getElementById("m");
+    
+        cm.addEventListener('input', function () {
+            let centimeters = parseFloat(this.value);
+            let meters = centimeters / 100;
+            m.value = meters.toFixed(2);
+        });
+    
+        m.addEventListener('input', function () {
+            let meters = parseFloat(this.value);
+            let centimeters = meters * 100;
+            cm.value = centimeters;
+        });
+    </script>
+    
+</body>
+</html>
