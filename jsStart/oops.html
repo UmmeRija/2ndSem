@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class RaiwayForm{
+            submit(){
+                alert(this.name + "Form Submited")
+            }
+            cancel(){
+                alert(this.name + "form cancel")
+            }
+            fill(givenname){
+                this.name = givenname
+            }
+        }
+
+        let aliForm = new RaiwayForm();
+        aliForm.fill("Ali")
+        let ahmadForm = new RaiwayForm();
+        ahmadForm.fill("Ahmad")
+
+        aliForm.submit();
+        ahmadForm.submit();
+        aliForm.cancel();
+    </script>
+</body>
+</html>
