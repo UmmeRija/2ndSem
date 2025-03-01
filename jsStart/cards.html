@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery/jquery.js"></script>
+</head>
+<style>
+    .card-conatainer{
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+    .card {
+  margin: 20px;
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .card-content {
+  padding: 20px;
+}
+
+.card .card-content h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.card .card-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+</style>
+<body>
+    <div class="card-container">
+       
+    </div>
+</body>
+<script>
+   $(document).ready(function() {
+      $.ajax({
+        url: "json/cards.json",
+        type: "GET",
+        dataType: "json",
+        success: function(data) {
+          $.each(data, function(key, value) {
+            let card = `
+              <div class="card">
+                <div class="card-content">
+                  <h2>${value.title}</h2>
+                  <p>${value.body}</p>
+                </div>
+              </div>
+            `;
+            $(".card-container").append(card);
+          });
+        },
+        error: function(xhr, status, error) {
+          console.log(xhr.responseText);
+        }
+    })
+})
+</script>
+</html>
